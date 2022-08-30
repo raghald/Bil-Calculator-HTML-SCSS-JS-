@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt #8 - JS</title>
+    <script src="https://kit.fontawesome.com/51a16c7da9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/mian.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1 class="top__title">billspliter</h1>
+            <p class="top__text">Podziel się rachunkiem, ze znajomymi</p>
+        </div>
+        <div class="bottom">
+            <label for="price" class="bottom__title">Kwota do zapłaty:</label>
+            <input type="number" class="bottom__input bottom__input-price" id="price">
+            <label for="persons" class="bottom__title">Liczba osób:</label>
+            <input type="number" class="bottom__input bottom__input-persons" id="persons">
+            <label for="tip" class="bottom__title">Napiwek:</label>
+            <select class="bottom__input bottom__input-select" id="tip">
+                <option value="0" disabled selected>- wybierz napiwek -</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+            </select>
+            <button class="bottom__btn">Oblicz</button>
+            <p class="bottom__error"></p>
+            <p class="bottom__result">Powinniście się złożyć po <span class="bottom__result--cost"></span> zł</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
